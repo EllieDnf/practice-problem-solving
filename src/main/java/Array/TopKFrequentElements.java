@@ -16,8 +16,8 @@ public class TopKFrequentElements {
         }
         int[] topFreq = new int[k];
         Object[] sortedvalue= frequency.values().stream().sorted().toArray();
-//        System.out.println("VALUES"+frequency.values());
-//        System.out.println("KEYS"+frequency.keySet());
+//        System.out.println('VALUES'+frequency.values());
+//        System.out.println('KEYS'+frequency.keySet());
         int count=0;
         while(count<k){
             for(Map.Entry<Integer, Integer> entry: frequency.entrySet()) {
@@ -30,6 +30,8 @@ public class TopKFrequentElements {
         return  topFreq;
     }
     public static void main(String[] args){
-        System.out.println(Arrays.toString(topKFrequent(new int[]{3,2,1,2,4,5,5,6,7,7,8,2,3,1,1,1,10,11,5,6,2,4,3,7,8,5,6} ,10)));
+        char a = 'A';
+        System.out.println((int) a);
+        //System.out.println(Arrays.toString(topKFrequent(new int[]{3,2,1,2,4,5,5,6,7,7,8,2,3,1,1,1,10,11,5,6,2,4,3,7,8,5,6} ,10)));
     }
 }
